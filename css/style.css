@@ -3,7 +3,50 @@
     --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans
 }
 
+a {
+    color: blue;
+    text-decoration: none;
+}
 
+.menu {
+    height: 100vh;
+    width: 80vw;
+    background: greenyellow;
+    position: fixed;
+    top: 0;
+    right: -90vw;
+    transition: right 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+}
+
+.menu-button {
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons {
+    font-size: 2.5rem;
+}
+
+.show {
+    right: 0;
+}
+
+.fade-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible {
+    display: block;
+}
 
 
 
@@ -31,15 +74,19 @@ body {
     background-color: antiquewhite;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     gap:4vw;
     font-family: var(--primary-font);
+    padding-right: 5vw;
 }
 
 #hd {
     grid-area: hd;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sc1 {
@@ -64,6 +111,62 @@ body {
 #img1 {
     width:20vw
 }
+
+/* My education */
+
+#wrapper2 {
+    display: grid;
+    grid-template-areas:
+    "nv"
+    "hd"
+    "am"
+    "ft";
+
+    grid-template-rows: 0.5fr 1fr 4fr 1fr;
 }
+
+#sc2 {
+    grid-area: am;
+    background-color: brown;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#l1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+/* Prior work experience*/
+
+#wrapper3 {
+    display: grid;
+    grid-template-areas:
+    "nv"
+    "hd"
+    "am"
+    "ft";
+
+    grid-template-rows: 0.5fr 1fr 4fr 1fr;
+}
+
+/* Projects */
+
+#wrapper4 {
+    display: grid;
+    grid-template-areas:
+    "nv"
+    "hd"
+    "am"
+    "ft";
+
+    grid-template-rows: 0.5fr 1fr 4fr 1fr;
+}
+
+}
+
 
 /* desktop */
