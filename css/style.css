@@ -1,5 +1,18 @@
+/* generell */
+:root {
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans
+}
+
+
+
+
+
+/* mobil */
+@media screen and (max-width:500px){
 body {
     background-color: aqua;
+    margin: 0;
+    font-family: var(--primary-font);
 }
 
 #wrapper {
@@ -9,13 +22,19 @@ body {
     "hd"
     "am"
     "ft";
-    margin-left: 3%;
-    margin-right: 3%;
+
+    grid-template-rows: 0.5fr 1fr 4fr 1fr;
 }
 
 #nv {
     grid-area: nv;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:4vw;
+    font-family: var(--primary-font);
 }
 
 #hd {
@@ -28,9 +47,9 @@ body {
     background-color: brown;
     padding: 3vw;
     display: grid;
-    gap: 4vw;
+    gap: 3vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 
 }
  h2 {
@@ -45,3 +64,6 @@ body {
 #img1 {
     width:20vw
 }
+}
+
+/* desktop */
