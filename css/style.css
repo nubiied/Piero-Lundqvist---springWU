@@ -4,14 +4,14 @@
 }
 
 a {
-    color: blue;
+    color: rgba(250, 249, 246, 1);
     text-decoration: none;
 }
 
 .menu {
     height: 100vh;
     width: 80vw;
-    background: greenyellow;
+    background: darkblue;
     position: fixed;
     top: 0;
     right: -90vw;
@@ -25,7 +25,7 @@ a {
     display: inline;
 }
 
-.menu-button i.material-icons {
+.menu-button .material-icons {
     font-size: 2.5rem;
 }
 
@@ -53,9 +53,14 @@ a {
 /* mobil */
 @media screen and (max-width:500px){
 body {
-    background-color: aqua;
+    background-color: rgba(250, 249, 246, 1);
     margin: 0;
     font-family: var(--primary-font);
+}
+
+#abt {
+    border-left: 1vh solid darkblue;
+    padding-left: 10px;
 }
 
 #wrapper {
@@ -69,9 +74,11 @@ body {
     grid-template-rows: 0.5fr 1fr 4fr 1fr;
 }
 
+
+
 #nv {
     grid-area: nv;
-    background-color: antiquewhite;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -81,17 +88,30 @@ body {
     padding-right: 5vw;
 }
 
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+}
+
 #hd {
     grid-area: hd;
-    background-color: blue;
+    background-color: darkblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3vh;
+    border-radius: 3vh;
+}
+
 #sc1 {
     grid-area: am;
-    background-color: brown;
+    background-color: white;
     padding: 3vw;
     display: grid;
     gap: 3vw;
@@ -105,11 +125,15 @@ body {
 
 #ft {
     grid-area: ft;
-    background-color: aquamarine;
+    background-color: darkblue;
 }
 
 #img1 {
-    width:20vw
+    width:20vw;
+}
+
+#img2 {
+    width:12vw;
 }
 
 /* My education */
